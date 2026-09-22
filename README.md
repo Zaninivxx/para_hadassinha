@@ -21,3 +21,7 @@ Se o sensor não estiver disponível, existe um botão alternativo para revelar 
 
 ## Texto central
 “Eu ainda escolho você. Mas eu quero viver essa escolha debaixo da vontade de Deus.”
+
+
+## V2
+Textos meta removidos: nada de 'página', 'fiz um site', 'promessa pronta' ou explicações sobre a experiência. A linguagem agora fala diretamente com Hadassa.
