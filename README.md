@@ -1,27 +1,25 @@
-# Hadassa, páginas interativas
+# Hadassa ♡
 
 Site estático mobile-first pronto para Vercel.
 
-## Estrutura
+## Fluxo
 - `index.html` — abertura
 - `princesa.html` — elogios interativos
-- `flores.html` — mini jogo para montar um buquê
-- `historia.html` — três luzes da história
-- `direcao.html` — chacoalhar o celular para revelar a parte espiritual
-- `final.html` — declaração final
-- `style.css`
-- `app.js`
+- `historia.html` — momentos da história
+- `direcao.html` — interação de chacoalhar o celular para revelar a mensagem sobre buscar a direção de Deus
+- `final.html` — declaração e envelope final interativo
 
-## Vercel
-Suba todos os arquivos para a raiz do repositório. Não precisa de build command.
+## Publicação
+Suba todos os arquivos deste pacote para a raiz do repositório e publique na Vercel.
+Não precisa de framework nem build command.
 
-## Importante sobre o gesto de chacoalhar
-No iPhone, o navegador exige que a pessoa toque primeiro em `ativar movimento`.
-Se o sensor não estiver disponível, existe um botão alternativo para revelar a mensagem.
-
-## Texto central
-“Eu ainda escolho você. Mas eu quero viver essa escolha debaixo da vontade de Deus.”
+## Observação
+No iPhone, o navegador pode pedir permissão de movimento antes de reconhecer o gesto de chacoalhar.
 
 
-## V2
-Textos meta removidos: nada de 'página', 'fiz um site', 'promessa pronta' ou explicações sobre a experiência. A linguagem agora fala diretamente com Hadassa.
+## V4
+O envelope final agora revela um poema cristão romântico mais elaborado e marcante, mantendo o foco na busca pela direção de Deus sem presumir uma resposta.
+
+
+## V5
+O poema do envelope final foi refeito para ser apenas romântico, fofo e cristão, sem linguagem de confirmação, decisão ou discernimento.

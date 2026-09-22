@@ -63,21 +63,6 @@ $$(".reveal-card").forEach(card=>{
   });
 });
 
-// Flower game
-let found=0;
-$$(".flower").forEach(f=>{
-  f.addEventListener("click",()=>{
-    if(f.classList.contains("found"))return;
-    f.classList.add("found"); found++; haptic(15); petalsBurst(8);
-    const c=$("#flowerCount"); if(c)c.textContent=`${found}/5 flores`;
-    if(found===5){
-      $("#bouquet")?.classList.add("show");
-      $("#flowerNext")?.removeAttribute("hidden");
-      setTimeout(()=>petalsBurst(55),220);
-    }
-  });
-});
-
 // Memory lights
 let lights=0;
 $$(".light-card").forEach(card=>{
@@ -144,4 +129,15 @@ $("#fallback")?.addEventListener("click",()=>{
 $("#finalReveal")?.addEventListener("click",()=>{
   $("#finalHidden")?.classList.add("show");
   haptic([30,35,30]); petalsBurst(70);
+});
+
+$("#miniEnvelope")?.addEventListener("click",()=>{
+  const env=$("#miniEnvelope");
+  if(env.classList.contains("open")) return;
+  env.classList.add("open");
+  haptic([18,30,18]);
+  petalsBurst(38);
+  setTimeout(()=>{
+    $("#declaration")?.classList.add("show");
+  },500);
 });
