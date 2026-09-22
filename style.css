@@ -369,9 +369,10 @@ em{font-weight:500;color:var(--rose)}
   transition:.75s;
 }
 .final-hidden.show{
-  max-height:240px;
+  max-height:4200px;
   opacity:1;
   margin-top:28px;
+  overflow:visible;
 }
 .final-hidden h3{
   font-size:49px;
@@ -505,9 +506,10 @@ em{font-weight:500;color:var(--rose)}
   transition:max-height .85s ease,opacity .65s ease,margin .65s ease;
 }
 .declaration.show{
-  max-height:520px;
+  max-height:3200px;
   opacity:1;
-  margin-top:30px;
+  margin-top:34px;
+  overflow:visible;
 }
 .declaration-heart{
   display:block;
@@ -602,4 +604,76 @@ em{font-weight:500;color:var(--rose)}
 }
 .poem-card small{
   line-height:1.45;
+}
+
+
+/* correção da tela final e do envelope */
+.final-page{
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.final-page .shell{
+  min-height:100svh;
+  height:auto;
+}
+
+.final-page .center{
+  justify-content:flex-start;
+  flex:none;
+  min-height:auto;
+  padding-top:52px;
+  padding-bottom:65px;
+}
+
+.final-page .final-hidden{
+  width:100%;
+}
+
+.final-page .envelope-area{
+  width:100%;
+  padding-bottom:18px;
+}
+
+.final-page .mini-envelope{
+  flex:0 0 auto;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.final-page .declaration{
+  width:min(100%,520px);
+  padding:0 4px 25px;
+}
+
+@media(max-width:699px){
+  .final-page .shell{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .final-page .center{
+    padding-top:28px;
+  }
+
+  .final-page .final-hidden.show{
+    max-height:5000px;
+  }
+
+  .final-page .declaration.show{
+    max-height:4000px;
+  }
+
+  .final-page .poem{
+    padding-left:8px;
+    padding-right:8px;
+  }
+
+  .final-page .poem p{
+    font-size:20px !important;
+  }
+
+  .final-page .poem-title{
+    font-size:34px !important;
+  }
 }

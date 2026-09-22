@@ -23,3 +23,10 @@ O envelope final agora revela um poema cristão romântico mais elaborado e marc
 
 ## V5
 O poema do envelope final foi refeito para ser apenas romântico, fofo e cristão, sem linguagem de confirmação, decisão ou discernimento.
+
+## V6 - correção do envelope
+- Corrigido o `max-height` que cortava o envelope no final.
+- Corrigido o limite de altura que cortava o poema.
+- Tela final agora cresce normalmente no celular.
+- Ao revelar o final, a página rola até o envelope.
+- Ao abrir o envelope, a página rola até o poema.

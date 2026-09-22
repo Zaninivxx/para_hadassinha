@@ -127,17 +127,38 @@ $("#fallback")?.addEventListener("click",()=>{
 
 // Finale
 $("#finalReveal")?.addEventListener("click",()=>{
-  $("#finalHidden")?.classList.add("show");
-  haptic([30,35,30]); petalsBurst(70);
+  const hidden=$("#finalHidden");
+  hidden?.classList.add("show");
+  haptic([30,35,30]);
+  petalsBurst(70);
+
+  // Leva a Hadassa naturalmente até o envelope, especialmente no celular.
+  setTimeout(()=>{
+    $("#miniEnvelope")?.scrollIntoView({
+      behavior:"smooth",
+      block:"center"
+    });
+  },450);
 });
 
 $("#miniEnvelope")?.addEventListener("click",()=>{
   const env=$("#miniEnvelope");
-  if(env.classList.contains("open")) return;
+  if(!env || env.classList.contains("open")) return;
+
   env.classList.add("open");
   haptic([18,30,18]);
   petalsBurst(38);
+
   setTimeout(()=>{
-    $("#declaration")?.classList.add("show");
-  },500);
+    const declaration=$("#declaration");
+    declaration?.classList.add("show");
+
+    // Depois de abrir o envelope, mostra a carta sem ela precisar procurar.
+    setTimeout(()=>{
+      declaration?.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+      });
+    },260);
+  },520);
 });
