@@ -1,341 +1,39 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#fff4f8" />
-  <meta name="description" content="Para Hadassa, minha princesinha. Uma história que começou aos 8 anos e nunca saiu do coração." />
-  <title>Hadassa, minha princesinha ♡</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fff4f8">
+  <title>Para Hadassa ♡</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <canvas id="petals" aria-hidden="true"></canvas>
-  <div class="grain" aria-hidden="true"></div>
+<body class="">
+<canvas id="petals"></canvas>
 
-  <!-- ABERTURA -->
-  <section class="intro" id="intro">
-    <div class="intro-glow intro-glow-a"></div>
-    <div class="intro-glow intro-glow-b"></div>
-
-    <div class="intro-inner">
-      <p class="kicker">UMA PEQUENA HISTÓRIA PARA HADASSA</p>
-
-      <div class="flame-wrap" id="flameWrap" role="button" tabindex="0" aria-label="Acender nossa chama">
-        <div class="flame halo"></div>
-        <div class="flame main"></div>
-        <div class="flame core"></div>
-        <div class="spark s1"></div>
-        <div class="spark s2"></div>
-        <div class="spark s3"></div>
-        <div class="wick"></div>
-        <div class="candle"></div>
-      </div>
-
-      <p class="tiny-above">algumas chamas apagam.</p>
-      <h1>Outras só estavam<br><em>esperando o momento certo.</em></h1>
-
-      <p class="intro-copy">
-        Princesinha, talvez a vida tenha mudado nossos caminhos algumas vezes…
-        e eu não sei exatamente o que Deus preparou para nós.
-        Mas existe uma coisa que eu preciso colocar diante dEle. e diante de você.
-      </p>
-
-      <button class="cta" id="igniteBtn">
-        <span>acender nossa história</span>
-        <b>♡</b>
-      </button>
-
-      <p class="micro">toque com carinho · tem surpresa ✦</p>
-    </div>
-  </section>
-
-  <main id="story" class="locked" aria-hidden="true">
-    <!-- CAPÍTULO 1 -->
-    <section class="chapter opening reveal">
-      <div class="ornament">✦</div>
-      <p class="section-label">CAPÍTULO I · MUITO ANTES DE 2024</p>
-      <h2>A gente se conheceu<br><em>quando tinha só 8 anos.</em></h2>
-
-      <div class="memory-card">
-        <span class="memory-number">08</span>
-        <div>
-          <p>
-            É engraçado pensar que, quando éramos crianças, alguma coisa em nós já sabia.
-          </p>
-          <p>
-            Existia aquela paixão inocente, bonita, impossível de explicar direito.
-            Só tinha um problema: <strong>a vida colocou cidades diferentes entre nós.</strong>
-          </p>
-        </div>
-      </div>
-
-      <p class="soft-line">Mas distância nunca foi exatamente o mesmo que esquecimento.</p>
-    </section>
-
-    <!-- TIMELINE -->
-    <section class="timeline-section reveal">
-      <p class="section-label">NOSSO CAMINHO</p>
-      <h2>Nem sempre foi uma linha reta.<br><em>Mas sempre levou de volta a você.</em></h2>
-
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="dot">♡</div>
-          <span class="year">INFÂNCIA</span>
-          <h3>Uma paixão pequenininha</h3>
-          <p>Dois corações ainda aprendendo o que era gostar de alguém.</p>
-        </article>
-
-        <article class="timeline-item">
-          <div class="dot">✦</div>
-          <span class="year">DISTÂNCIA</span>
-          <h3>Um namoro pelo celular</h3>
-          <p>A gente tentou do jeito que dava. Mesmo longe, existia um “nós”.</p>
-        </article>
-
-        <article class="timeline-item">
-          <div class="dot">↝</div>
-          <span class="year">A VIDA</span>
-          <h3>Caminhos separados</h3>
-          <p>As situações mudaram, o tempo passou e cada um precisou seguir seu caminho.</p>
-        </article>
-
-        <article class="timeline-item highlight">
-          <div class="dot">♥</div>
-          <span class="year">2024</span>
-          <h3>A chama acendeu de novo</h3>
-          <p>Eu fui morar na sua cidade. E aquilo que parecia antigo mostrou que ainda estava vivo.</p>
-        </article>
-
-        <article class="timeline-item">
-          <div class="dot">💍</div>
-          <span class="year">NÓS</span>
-          <h3>Namoro. Noivado. Sonhos.</h3>
-          <p>A gente voltou a escolher um ao outro e começou a imaginar um futuro juntos.</p>
-        </article>
-
-        <article class="timeline-item">
-          <div class="dot">☁</div>
-          <span class="year">OUTRA VEZ</span>
-          <h3>A vida nos colocou à prova</h3>
-          <p>Mais uma vez, circunstâncias difíceis nos separaram. Mas nem tudo que se separa deixa de existir.</p>
-        </article>
-
-        <article class="timeline-item ending">
-          <div class="dot">✧</div>
-          <span class="year">AGORA</span>
-          <h3>Estamos buscando a direção de Deus</h3>
-          <p>
-            Não existe uma resposta pronta, nem uma promessa que eu queira forçar.
-            Existe oração, sinceridade e o desejo de descobrir juntos se esse caminho vem dEle.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- REVELAÇÃO CENTRAL -->
-    <section class="confession reveal">
-      <div class="heart-orbit">
-        <span>♡</span>
-        <i></i>
-      </div>
-      <p class="section-label light">SE EU TIVESSE QUE RESUMIR TUDO</p>
-      <h2>Eu nunca<br><em>deixei de amar você.</em></h2>
-      <p>
-        Talvez eu nem sempre tenha conseguido demonstrar do jeito certo.
-        Talvez a vida tenha sido barulhenta demais em alguns momentos.
-        Mas, mesmo nos intervalos, você continuou sendo uma parte muito bonita de mim.
-        E hoje eu não quero colocar o meu sentimento acima de Deus 
-        quero colocar o meu sentimento diante dEle.
-      </p>
-      <button class="ghost-btn" id="heartBtn">toque aqui, princesinha ♡</button>
-      <div class="hidden-whisper" id="whisper">
-        “Se Deus permitir que nossos caminhos permaneçam juntos, eu quero amar você com mais cuidado, mais maturidade e mais propósito do que antes.”
-      </div>
-    </section>
-
-    <!-- O QUE ELE AMA NELA -->
-    <section class="qualities reveal">
-      <p class="section-label">TRÊS COISAS QUE MORAM EM MIM</p>
-      <h2>O que faz você ser<br><em>a minha princesinha.</em></h2>
-
-      <div class="quality-grid">
-        <button class="quality-card" data-message="Sua delicadeza me lembra que força não precisa ser barulhenta. Existe beleza no seu jeito de sentir, falar e cuidar.">
-          <span class="q-icon">❀</span>
-          <strong>Delicadeza</strong>
-          <small>toque para ler</small>
-        </button>
-
-        <button class="quality-card" data-message="Eu admiro a pureza do seu coração. esse jeito bonito de existir sem precisar deixar de ser quem você é.">
-          <span class="q-icon">♡</span>
-          <strong>Pureza</strong>
-          <small>toque para ler</small>
-        </button>
-
-        <button class="quality-card" data-message="Seu carisma faz presença virar memória. Tem algo em você que colore qualquer lugar onde chega.">
-          <span class="q-icon">✦</span>
-          <strong>Carisma</strong>
-          <small>toque para ler</small>
-        </button>
-      </div>
-    </section>
-
-    <!-- FÉ -->
-    <section class="faith reveal">
-      <div class="faith-card">
-        <p class="section-label">ANTES DE QUALQUER RESPOSTA</p>
-        <div class="little-cross">✧</div>
-        <h2>Eu quero buscar Deus<br><em>antes de buscar um “nós”.</em></h2>
-        <p>
-          Eu quero você. Isso é verdade.
-          Mas eu não quero transformar o que eu sinto em uma resposta que só Deus pode dar.
-          Se for para caminharmos juntos, eu quero que seja com paz, confirmação, maturidade
-          e com a presença dEle no centro. não apenas com emoção.
-        </p>
-        <p>
-          Minha escolha é ser sincero com você e com Deus:
-          <strong>eu ainda te escolheria</strong>.
-          Mas acima da minha escolha, eu quero aprender a dizer:
-          “Senhor, seja feita a Tua vontade.”
-        </p>
-        <blockquote>
-          “Entrega o teu caminho ao Senhor; confia nele, e ele o fará.”
-          <cite>Salmos 37:5</cite>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- CARTA -->
-    <section class="letter-section reveal">
-      <p class="section-label">UMA CARTA PARA VOCÊ</p>
-
-      <div class="envelope" id="envelope">
-        <div class="envelope-back"></div>
-        <div class="letter-paper">
-          <span class="letter-top">para: Hadassa ♡</span>
-          <h2>Minha princesinha,</h2>
-
-          <p>
-            se alguém tivesse contado para aquelas duas crianças de 8 anos tudo o que ainda viveriam,
-            talvez a gente nem acreditasse.
-          </p>
-
-          <p>
-            A vida nos aproximou, nos afastou, mudou cidades, planos, fases e circunstâncias.
-            Houve momentos em que parecia que a nossa história tinha ficado apenas no passado.
-            Mas, mesmo assim, o carinho que eu sinto por você nunca se tornou indiferença.
-          </p>
-
-          <p>
-            E hoje eu preciso ser sincero: <strong>eu ainda escolheria você.</strong>
-          </p>
-
-          <p>
-            Só que eu também aprendi uma coisa importante:
-            amar alguém de verdade não é tentar obrigar a vida a acontecer do jeito que eu quero.
-            É ter coragem de colocar o próprio coração nas mãos de Deus.
-          </p>
-
-          <p class="letter-emphasis">
-            Por isso, eu não quero te prometer que “vai dar certo”.
-            Eu quero te prometer sinceridade.
-            Quero orar, buscar direção, amadurecer e deixar que Deus confirme aquilo que for dEle.
-          </p>
-
-          <p>
-            Se a vontade de Deus for que nossos caminhos permaneçam juntos,
-            eu quero viver isso de um jeito diferente:
-            com mais cuidado, mais diálogo, mais respeito, mais paciência
-            e com Cristo ocupando o lugar que nenhum de nós deve ocupar.
-          </p>
-
-          <p>
-            E se o processo exigir tempo, eu quero respeitar o tempo.
-            Se exigir oração, eu quero orar.
-            Se exigir mudança em mim, eu quero ter humildade para mudar.
-          </p>
-
-          <p>
-            Porque você não é apenas alguém que eu quero ter por perto.
-            Você é alguém que eu quero amar de um jeito que não me afaste de Deus 
-            e que também nunca afaste você dEle.
-          </p>
-
-          <p class="letter-emphasis">
-            Então essa carta não é uma pressão.
-            É uma entrega.
-            Eu estou dizendo para você e para Deus:
-            <strong>o meu coração ainda escolhe Hadassa. Mas eu quero que a vontade dEle seja maior que a minha.</strong>
-          </p>
-
-          <p>
-            Seja qual for a resposta que o tempo e a oração nos trouxerem,
-            quero que você saiba uma coisa com toda a verdade que existe em mim:
-            eu nunca deixei de enxergar algo especial em você.
-          </p>
-
-          <p class="signature">
-            Com amor e oração,<br>
-            <strong>Vi ♡</strong>
-          </p>
-        </div>
-
-        <div class="envelope-front">
-          <div class="wax-seal">H</div>
-          <p>toque para abrir</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL -->
-    <section class="finale reveal">
-      <div class="crown">♕</div>
-      <p class="section-label">E AGORA, HADASSA...</p>
-      <h2>Meu coração escolhe você.<br><em>Mas eu quero que Deus escolha o caminho.</em></h2>
-
-      <p class="final-copy">
-        Eu não sei como termina esta página.
-        E, pela primeira vez, eu acho bonito não precisar saber agora.
-        Podemos orar, buscar, amadurecer e deixar Deus conduzir aquilo que nós não conseguimos controlar.
-      </p>
-
-      <div class="final-question">
-        <span>guarda isso no coração:</span>
-        <strong>meu coração ainda escolhe você. Mas eu quero viver essa escolha debaixo da vontade de Deus.</strong>
-      </div>
-
-      <button class="cta final-btn" id="finalBtn">
-        <span>toque para guardar este momento</span>
-        <b>♥</b>
-      </button>
-
-      <div class="last-message" id="lastMessage">
-        <span class="big-heart">♥</span>
-        <p>Hadassa, minha princesinha...</p>
-        <h3>eu amo você.</h3>
-        <small>
-          e enquanto buscamos uma resposta, minha oração é simples:
-          que a vontade de Deus seja maior que a nossa. E, se for da vontade dEle,
-          que a nossa história continue. ♡
-        </small>
-      </div>
-
-      <footer>FEITO PARA HADASSA · COM AMOR, VI · 2026</footer>
-    </section>
-  </main>
-
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
-      <span class="modal-heart">♡</span>
-      <p id="modalText"></p>
-    </div>
+<div class="shell">
+  <div class="topbar">
+    <span class="brand">para Hadassa ♡</span>
+    <div class="progress"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
   </div>
 
-  <script src="./script.js"></script>
+  <main class="center">
+    <div class="lock-heart" id="heartOpen">♡</div>
+    <p class="eyebrow">princesinha, isso é para você</p>
+    <h1>Não é um pedido.<br><em>É só o meu coração falando.</em></h1>
+    <p class="lead">
+      Fiz algumas páginas para você abrir devagar.
+      Sem pressão. Sem promessa pronta. Só verdade.
+    </p>
+    <button class="btn next" id="openStory">começar ♡</button>
+    <p class="note">melhor no celular</p>
+  </main>
+
+  <div class="footer">feito pelo Vi, com carinho</div>
+</div>
+
+<script src="./app.js"></script>
 </body>
 </html>
